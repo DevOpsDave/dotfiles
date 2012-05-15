@@ -1,0 +1,4 @@
+desc "install tmux dotfiles"
+task :install do
+  sh 'rsync -av .tmux.conf ~/.tmux.conf'
+end
