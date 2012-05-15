@@ -1,0 +1,5 @@
+desc "install vim dotfiles"
+task :install do
+  sh 'rsync -av .vimrc ~/.vimrc'
+  sh 'rsync -av .vim ~/'
+end
