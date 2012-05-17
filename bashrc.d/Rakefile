@@ -1,0 +1,5 @@
+desc "install bashrc.d"
+task :install do
+  sh './append.sh'
+  sh 'rsync -av --delete .bashrc.d/ ~/.bashrc.d'
+end
