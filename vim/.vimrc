@@ -11,3 +11,7 @@ filetype plugin on
 filetype indent on
 colorscheme vividchalk
 set nowrap
+
+map <F3> :TlistToggle
+let Tlist_Use_Right_Window = 1
+map <F2> :NERDTreeToggle
