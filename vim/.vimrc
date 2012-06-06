@@ -4,7 +4,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible
-colorscheme vividchalk
+colorscheme gummybears
 syntax on
 filetype on
 filetype plugin on
