@@ -4,11 +4,11 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible
+colorscheme vividchalk
 syntax on
 filetype on
 filetype plugin on
 filetype indent on
-colorscheme vividchalk
 set nowrap
 set nohlsearch
 
