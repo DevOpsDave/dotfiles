@@ -13,7 +13,7 @@ set nowrap
 set nohlsearch
 
 " Python indention
-au FileType python setl shiftwidth=4 tabstop=4
+au FileType python setl tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 map <F3> :TlistToggle
 let Tlist_Use_Right_Window = 1
