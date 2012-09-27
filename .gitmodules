@@ -4,3 +4,6 @@
 [submodule "vim/.vim/bundle/dotvim-python-ide"]
 	path = vim/.vim/bundle/dotvim-python-ide
 	url = git://github.com/kpanic/dotvim-python-ide.git
+[submodule "vim/.vim/bundle/puppet"]
+	path = vim/.vim/bundle/puppet
+	url = git://github.com/rodjek/vim-puppet.git
