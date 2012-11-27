@@ -26,3 +26,6 @@ if bufwinnr(1)
   map <C-A>h <c-w><
   map <C-A>l <c-w>>
 endif
+
+" Rope refactoring library.  Used by python-mode
+let g:pymode_rope_always_show_complete_menu = 0
