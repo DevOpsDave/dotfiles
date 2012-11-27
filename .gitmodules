@@ -4,3 +4,6 @@
 [submodule "vim/.vim/bundle/puppet"]
 	path = vim/.vim/bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
+[submodule "vim/.vim/bundle/vim-puppet"]
+	path = vim/.vim/bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
