@@ -1,0 +1,63 @@
+# Set the prefix to ^A.
+unbind C-b
+set -g prefix ^A
+
+# Allows us to use C-a a <command> to send commands to a TMUX session inside 
+# another TMUX session.
+bind a send-prefix
+
+# Easily get the last window.
+bind-key C-a last-window
+
+# Set status bar
+set -g status-bg black
+set -g status-fg white
+set -g status-left "#S"
+set -g status-right "#[fg=green]#H"
+
+# Rather than constraining window size to the maximum size of any client 
+# connected to the *session*, constrain window size to the maximum size of any 
+# client connected to *that window*. Much more reasonable.
+setw -g aggressive-resize on
+
+# Supposed to enable mouse scrolling
+#set-option -g mouse-select-pane on
+#set-option -g mouse-select-window on
+#set-window-option -g mode-mouse on
+# Turn it off because copy and paste broke
+set-window-option -g mode-mouse off
+set-option -g mouse-select-pane off
+set-option -g mouse-select-window off
+
+# Don't mess with this.  It will break key repeat on resize.
+#set-option -g repeat-time 0
+
+# Don't remember what this is for anymore.
+set-option -g default-command "reattach-to-user-namespace -l bash"
+
+# swap windows.
+bind-key -n C-S-Left swap-window -t -1
+bind-key -n C-S-Right swap-window -t +1
+
+# Activity monitoring
+#setw -g monitor-activity on
+#set -g visual-activity on
+
+# Example of using a shell command in the status line
+#set -g status-right "#[fg=yellow]#(uptime | cut -d ',' -f 2-)"
+
+# Highlight active window
+set-window-option -g window-status-current-bg red
+
+# Ctrl-Arrow: Resize panes
+bind -r M-Up resize-pane -U
+bind -r M-Down resize-pane -D
+bind -r M-Left resize-pane -L
+bind -r M-Right resize-pane -R
+bind -n M-Up resize-pane -U
+bind -n M-Down resize-pane -D
+bind -n M-Left resize-pane -L
+bind -n M-Right resize-pane -R
+bind -r M-Left resize-pane -L
+bind -r M-Right resize-pane -R
+
